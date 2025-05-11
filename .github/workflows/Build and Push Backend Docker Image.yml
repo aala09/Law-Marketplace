@@ -18,7 +18,7 @@ jobs:
         uses: docker/login-action@v3
         with:
           username: aala09
-          password: 22630055Aala
+          password: ${STRIPE_SECRET_KEY}
 
       - name: Build and push backend Docker image
         uses: docker/build-push-action@v5
